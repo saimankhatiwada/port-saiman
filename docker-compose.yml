@@ -1,0 +1,10 @@
+services:
+  portfolio:
+    container_name: Saiman
+    build:
+      context: ./saiman/
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=production
+    ports:
+      - 7150:7150
